@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  
+  --color-primary: #58CC02;
+  --color-primary-dark: #46A302;
+  --color-secondary: #1CB0F6;
+  --color-accent: #FFC800;
+  --color-bg: #F7F7F7;
+  --color-card: #FFFFFF;
+  --color-text: #4B4B4B;
+  --color-text-light: #AFAFAF;
+  --color-border: #E5E5E5;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text font-sans;
+  }
+}
+
+/* Duolingo-style solid shadows */
+.shadow-duo-primary {
+  box-shadow: 0 4px 0 #46A302;
+}
+
+.shadow-duo-secondary {
+  box-shadow: 0 4px 0 #1899D6;
+}
+
+.shadow-duo-accent {
+  box-shadow: 0 4px 0 #E5A500;
+}
+
+.shadow-duo-gray {
+  box-shadow: 0 4px 0 #E5E5E5;
+}
+
+.shadow-duo-white {
+  box-shadow: 0 4px 0 #E5E5E5;
+}
